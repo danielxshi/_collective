@@ -34,3 +34,32 @@
     text-transform: uppercase;
     margin: 0;
 }
+
+.hero--loader{
+    opacity: 0;
+    color: blue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: blue;
+}
+
+.loader--member-wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: blue;
+    width: 20vw;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    .member--wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

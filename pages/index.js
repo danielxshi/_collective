@@ -4,37 +4,112 @@ import { gsap } from "gsap";
 export default function Home() {
   const boxRef = React.createRef();
   const wrapperRef = React.createRef();
+  const heroRef = React.createRef();
+  const titleRef = React.createRef();
 
   useEffect(() => {
+    //CURTAIN
     gsap.to(wrapperRef.current, .5, {
       top: "-100%",
       ease: "sine.out",
-      delay: 3.6
+      delay: 8.6
     });
 
-    gsap.from(boxRef.current, 1.6,
-      {
+    //LOADER from
+    gsap.from(boxRef.current, 1.6,{
         scaleY: 0,
         y: 80,
-        ease: "slow(0.2, 0.7, false)",
+        ease: "Power1.easeOut",
         transformOrigin:"50% 100%"
-      });
+    });
 
-      gsap.to(boxRef.current, 1.2,
-        {
-          delay: 1.6,
-          height: "20vh",
-          scaleY: 0,
-          ease: "slow(0.2, 0.7, false)",
-          transformOrigin:"0% -100%"
-        });
+    //LOADER to
+    gsap.to(boxRef.current, 1.6, {
+        delay: 1.6,
+        height: "20vh",
+        scaleY: 0,
+        ease: "Power1.easeOut",
+        transformOrigin:"0% -100%"
+    });
+    
+    //HERO to
+    gsap.to(heroRef.current, 1.6, {
+      opacity: 1,
+      delay: 9,
+      ease: "slow(0.2, 0.7, false)",
+      x: "-=10vw"
+    });
 
+    //MEMBER to
+    gsap.to(titleRef.current, 1.6, {
+      delay: 4,
+      opacity: 1,
+      ease: "slow(0.2, 0.7, false)"
+    });
+
+    gsap.to(titleRef.current, 1.6, {
+      opacity: 0,
+      delay: 8,
+      ease: "slow(0.2, 0.7, false)"
+    });
   });
 
   return (
     <div>
       <div className="wrapper" ref={wrapperRef}>
-        <div className="loader" ref={boxRef}>
+        <div className="loader" ref={boxRef}></div>
+        <div className="loader--hero">
+          <span className="hero--loader" ref={heroRef}>_COLLECTIVE</span>
+        </div>
+        <div className="loader--member-wrapper" ref={titleRef}>
+          <div className="member--wrapper">
+            <div className="loader--member-name">
+              <span>Daniel Shi</span>
+            </div>
+            <div className="loader--member-role">
+              <span>Role</span>
+            </div>
+          </div>
+          <div className="member--wrapper">
+            <div className="loader--member-name">
+              <span>Daniel Shi</span>
+            </div>
+            <div className="loader--member-role">
+              <span>Role</span>
+            </div>
+          </div>
+          <div className="member--wrapper">
+            <div className="loader--member-name">
+              <span>Daniel Shi</span>
+            </div>
+            <div className="loader--member-role">
+              <span>Role</span>
+            </div>
+          </div>
+          <div className="member--wrapper">
+            <div className="loader--member-name">
+              <span>Daniel Shi</span>
+            </div>
+            <div className="loader--member-role">
+              <span>Role</span>
+            </div>
+          </div>
+          <div className="member--wrapper">
+            <div className="loader--member-name">
+              <span>Daniel Shi</span>
+            </div>
+            <div className="loader--member-role">
+              <span>Role</span>
+            </div>
+          </div>
+          <div className="member--wrapper">
+            <div className="loader--member-name">
+              <span>Daniel Shi</span>
+            </div>
+            <div className="loader--member-role">
+              <span>Role</span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="grid-container">
