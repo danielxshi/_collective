@@ -16,7 +16,7 @@
 @import 'modules/_scrollbar.scss';
 @import 'modules/_buttons.scss';
 @import 'modules/_footer.scss';
-@import 'modules/_nav.scss';
+@import 'modules/_nav.module.scss';
 
 /* FONTS
 ========================================================================== */
@@ -40,10 +40,41 @@ body {
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
+  background-color: $BLACK;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+background: transparent;
+border: none;
+cursor: pointer;
+padding: 0;
+}
+
+button:hover,
+button:focus {
+  background:transparent;
+}
+
+button:focus {
+  outline: none;
+
 }
 
 .box {
-  background: white;
+  background: $BLACK;
   opacity: 1;
   position: absolute;
   top: 0;
@@ -59,7 +90,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #000;
+  background: $PRIMARY--WHITE;
   z-index: 2;
 }
 
@@ -70,7 +101,7 @@ body {
   transform: translate(-50%, -50%);
   width: 8%;
   height: 20vh;
-  background: #fff;
+  background: $BLACK;
   z-index: 2;
 }
 

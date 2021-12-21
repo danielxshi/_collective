@@ -1,0 +1,129 @@
+// @import url(../base/_variables.scss);
+//NAV
+$NAV_BAR_HEIGHT: 4rem;
+$STATUS_BAR_HEIGHT: 40;
+
+
+//Grid
+$grid-gap: 2rem;
+
+
+//TYPE
+$body--font-family: 'Poppins', sans-serif;
+$heading--font-family: 'Poppins', sans-serif;
+$base--font-size: .9rem;
+$base--font-weight: 400;
+
+
+//Colors
+$BLACK: #0E0E0E;
+$PRIMARY--WHITE: #ECEBF3;
+$SECONDARY--WHITE: #FFFFFF;
+
+#navlogo{
+    grid-column-start: 1;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.test{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: $grid-gap;
+    width: 100%;
+    margin: 0 auto;
+    height: inherit;
+    width: 85%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: $NAV_BAR_HEIGHT;
+    a{
+        text-decoration: none;
+        color: $PRIMARY--WHITE;
+    }
+    a:hover {
+        color: $SECONDARY--WHITE;
+    }
+    ul li {
+        list-style: none;
+    }
+    .navmenu{
+        grid-column-start: 11;
+        grid-column-end: -1;
+        display: flex;
+        justify-content: space-around;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e6e6e6;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navlogo {
+        font-size: 2.1rem;
+        font-weight: 500;
+        display: flex;
+        margin: 0;
+    }
+    .test{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+    .navmenu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        // border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navmenu.active {
+        left: 0;
+    }
+
+    .navitem {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

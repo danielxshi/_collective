@@ -37,13 +37,13 @@
 
 .hero--loader{
     opacity: 0;
-    color: blue;
+    color: $PRIMARY--WHITE;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    color: blue;
+    color: $PRIMARY--WHITE;
 }
 
 .loader--member-wrapper{
@@ -52,7 +52,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    color: blue;
+    color: $BLACK;
     width: 20vw;
     display: flex;
     opacity: 0;

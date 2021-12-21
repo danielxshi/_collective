@@ -1,5 +1,22 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from "gsap";
+import NextLink from 'next/link'
+import {
+  Link,
+  Container,
+  Heading,
+  Box,
+  Image,
+  SimpleGrid,
+  Button,
+  List,
+  ListItem,
+  Icon,
+  useColorModeValue
+} from '@chakra-ui/react'
+import Navbar from '/components/Navbar/Navbar'
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const boxRef = React.createRef();
@@ -12,7 +29,7 @@ export default function Home() {
     gsap.to(wrapperRef.current, .5, {
       top: "-100%",
       ease: "sine.out",
-      delay: 8.6
+      delay: 6.6
     });
 
     //LOADER from
@@ -35,7 +52,7 @@ export default function Home() {
     //HERO to
     gsap.to(heroRef.current, 1.6, {
       opacity: 1,
-      delay: 9,
+      delay: 7,
       ease: "slow(0.2, 0.7, false)",
       x: "-=10vw"
     });
@@ -49,7 +66,7 @@ export default function Home() {
 
     gsap.to(titleRef.current, 1.6, {
       opacity: 0,
-      delay: 8,
+      delay: 6,
       ease: "slow(0.2, 0.7, false)"
     });
   });
@@ -64,7 +81,7 @@ export default function Home() {
         <div className="loader--member-wrapper" ref={titleRef}>
           <div className="member--wrapper">
             <div className="loader--member-name">
-              <span>Daniel Shi</span>
+              <span>fName lName</span>
             </div>
             <div className="loader--member-role">
               <span>Role</span>
@@ -72,7 +89,7 @@ export default function Home() {
           </div>
           <div className="member--wrapper">
             <div className="loader--member-name">
-              <span>Daniel Shi</span>
+              <span>fName lName</span>
             </div>
             <div className="loader--member-role">
               <span>Role</span>
@@ -80,7 +97,7 @@ export default function Home() {
           </div>
           <div className="member--wrapper">
             <div className="loader--member-name">
-              <span>Daniel Shi</span>
+              <span>fName lName</span>
             </div>
             <div className="loader--member-role">
               <span>Role</span>
@@ -88,7 +105,7 @@ export default function Home() {
           </div>
           <div className="member--wrapper">
             <div className="loader--member-name">
-              <span>Daniel Shi</span>
+              <span>fName lName</span>
             </div>
             <div className="loader--member-role">
               <span>Role</span>
@@ -96,7 +113,7 @@ export default function Home() {
           </div>
           <div className="member--wrapper">
             <div className="loader--member-name">
-              <span>Daniel Shi</span>
+              <span>fName lName</span>
             </div>
             <div className="loader--member-role">
               <span>Role</span>
@@ -104,7 +121,7 @@ export default function Home() {
           </div>
           <div className="member--wrapper">
             <div className="loader--member-name">
-              <span>Daniel Shi</span>
+              <span>fName lName</span>
             </div>
             <div className="loader--member-role">
               <span>Role</span>
@@ -112,8 +129,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="grid-container">
-        <h1 className="heading-01">test</h1>
+      <Navbar/>
+      {/* <Layout/> */}
+      <div className="grid--container">
+        {/* <h1 className="heading-01">test</h1> */}
       </div>
     </div>
   )
