@@ -104,24 +104,3 @@ button:focus {
   background: $BLACK;
   z-index: 2;
 }
-
-/* media queries  */
-
-@media (max-width: 900px) {
-  .wrapper-img {
-    width: 90%;
-  }
-  .header {
-    top: 50%;
-    left: 50%;
-    text-align: center;
-  }
-  .header h1 {
-    font-size: 40px;
-  }
-
-  .projects,
-  .img-nav {
-    display: none;
-  }
-}

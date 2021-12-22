@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useState } from "react";
-import styles2 from "../../styles/Home.module.css";
-import styles3 from "../../styles/modules/_nav.module.scss";
+import styles from "../../styles/modules/_nav.module.scss";
 import {MenuItems} from "./MenuItems"
 
 export default function Layout({children}){
@@ -9,22 +8,22 @@ export default function Layout({children}){
     const [isOpen,setIsOpen] = useState(false);
     const openMenu= ()=> setIsOpen(!isOpen);
     return <> 
-            <header className={styles2.header}>
-                <nav className={styles3.test}>
+            <header>
+                <nav className={[styles['nav'], styles['nav--grid']].join(' ')}>
                     <Link href='/'>
-                     <a id={styles3.navlogo}>005F</a>
+                     <a className={[styles['nav--logo--grid'], styles['nav--logo']].join(' ')}>005F</a>
                     </Link>
                 <ul className={isOpen === false ? 
-                        styles3.navmenu : styles3.navmenu +' '+ styles3.active}>
+                        [styles['nav--menu'], styles['nav--menu--grid']].join(' ') : styles['nav--menu'] +' '+ styles.active}>
                         {MenuItems.map((item, index) => {
                             return(
-                                <li className ="overflow-wrap underscore-cta " key={index} >
+                                <li key={index} >
                                     <Link
                                         to={"/" +item.href} 
                                         href={item.href} smooth={true} 
                                         spy={true}  
                                         className={item.cName, isOpen === false ? 
-                                            styles3.navlink : styles3.navlink+' '+styles3.active}
+                                            styles.navlink : styles.navlink+' '+styles.active}
                                             onClick={openMenu}>
                                         {item.title}
                                     </Link>
@@ -33,16 +32,15 @@ export default function Layout({children}){
                         })}
                 </ul>
                 <button className={isOpen === false ? 
-                                    styles3.hamburger : styles3.hamburger+' '+styles3.active}
+                                    styles.hamburger : styles.hamburger+' '+styles.active}
                                     onClick={openMenu}
                                     >
-                    <span className={styles3.bar}></span>
-                    <span className={styles3.bar}></span>
-                    <span className={styles3.bar}></span>
+                    <span className={styles.bar}></span>
+                    <span className={styles.bar}></span>
+                    <span className={styles.bar}></span>
                 </button>
                 </nav>
             </header>
         {children}
-        {/* {footer} */}
      </>
 }

@@ -16,7 +16,6 @@ import {
 } from '@chakra-ui/react'
 import Navbar from '/components/Navbar/Navbar'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const boxRef = React.createRef();
