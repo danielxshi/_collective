@@ -28,10 +28,13 @@ module.exports = {
         serif: ["latienne-pro", "serif"],
       },
       fontSize: {
-        tiny: [getResponsiveValue(screens.sm, screens["xl"], 12, 14), "1.2em"],
-        small: [getResponsiveValue(screens.sm, screens["xl"], 12, 16), "1.2em"],
+        tiny: [getResponsiveValue(screens.sm, screens["2xl"], 12, 14), "1.2em"],
+        small: [
+          getResponsiveValue(screens.sm, screens["2xl"], 12, 16),
+          "1.2em",
+        ],
         medium: [
-          getResponsiveValue(screens.sm, screens["xl"], 20, 24),
+          getResponsiveValue(screens.sm, screens["2xl"], 20, 24),
           "1.075em",
         ],
         big: [

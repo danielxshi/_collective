@@ -1,7 +1,7 @@
 import React from "react";
 
 function LinkList({ children }) {
-  return <div className="mt-[1em]">{children}</div>;
+  return <div className="mt-[1.2em]">{children}</div>;
 }
 
 export default LinkList;

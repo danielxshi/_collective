@@ -159,6 +159,17 @@ export default function Home() {
           />
         </LinkList>
       </Section>
+      <footer className="my-[2em]">
+        <div className="font-serif text-medium mb-5">Got a job for us?</div>
+        <div className="flex flex-col">
+          <a className="font-mono text-small" href="mailto:testing@005.com">
+            testing@005.com
+          </a>
+          <a className="font-mono text-small" href="mailto:testing@005.com">
+            +1 604 6030483
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }
