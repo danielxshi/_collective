@@ -19,35 +19,6 @@ export default function Layout({ children }) {
               005F
             </a>
           </Link>
-          <ul
-            className={
-              isOpen === false
-                ? [styles['nav--menu'], styles['nav--menu--grid']].join(' ')
-                : styles['nav--menu'] + ' ' + styles.active
-            }
-          >
-            {MenuItems.map((item, index) => {
-              return (
-                <li key={index}>
-                  <Link
-                    to={'/' + item.href}
-                    href={item.href}
-                    smooth={true}
-                    spy={true}
-                    className={
-                      (item.cName,
-                      isOpen === false
-                        ? styles.navlink
-                        : styles.navlink + ' ' + styles.active)
-                    }
-                    onClick={openMenu}
-                  >
-                    {item.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
           <button
             className={
               isOpen === false
