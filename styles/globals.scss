@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "font.css";
+
 /* BASE - Base Variable file along with starting point Mixins.
 ========================================================================== */
-
 @import "base/_variables.scss";
 @import "base/_mixins.scss";
 
@@ -43,8 +44,9 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  // overflow: hidden;
   background-color: $BLACK;
+  color: #fff;
   box-sizing: border-box;
 }
 

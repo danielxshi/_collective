@@ -17,6 +17,27 @@ import {
 import Navbar from "/components/Navbar/Navbar";
 import Head from "next/head";
 import IntroMessage from "../components/IntroMessage";
+import LinkListItem from "../components/LinkList/LinkListItem";
+import LinkList from "../components/LinkList/LinkList";
+
+const SectionLabel = ({ children }) => (
+  <h2 className="font-mono text-small leading-none pb-4 uppercase tracking-widest opacity-50">
+    {children}
+  </h2>
+);
+
+const Section = ({ children }) => (
+  <section className="my-[4em]">{children}</section>
+);
+
+const BigText = ({ children }) => (
+  <p className="font-serif text-big tracking-big-text">{children}</p>
+);
+
+const Logo = ({ src }) => <img className="" src={src} alt="" />;
+const LogoContainer = ({ children }) => (
+  <div className="grid grid-cols-3 gap-3 px-12">{children}</div>
+);
 
 export default function Home() {
   const boxRef = React.createRef();
@@ -72,9 +93,9 @@ export default function Home() {
   });
 
   return (
-    <div>
-      <div className="text-white">Test</div>
-      {/* <div className="wrapper" ref={wrapperRef}>
+    <main className="mx-[.5em] text-big">
+      <section className="w-full h-screen">
+        {/* <div className="wrapper" ref={wrapperRef}>
         <div className="loader" ref={boxRef}></div>
         <div className="loader--hero">
           <span className="hero--loader" ref={heroRef}>
@@ -87,6 +108,47 @@ export default function Home() {
       </div>
       <Navbar />
       <div className="grid--container"></div> */}
-    </div>
+      </section>
+      <Section>
+        <SectionLabel>About Us</SectionLabel>
+        <BigText>
+          We partner with clients in financial services, electronic commerce,
+          travel and tourism services, entertainment & infotainment, retail
+          industries, CPG, and more.
+        </BigText>
+      </Section>
+      <Section>
+        <div className="flex w-full flex-col items-center">
+          <SectionLabel>Entrusted By</SectionLabel>
+          <LogoContainer>
+            <Logo src={"client-logos/bw/ap.png"} alt="" />
+            <Logo src={"client-logos/bw/calvin-klein.png"} alt="" />
+            <Logo src={"client-logos/bw/fairmont-dubai.png"} alt="" />
+            <Logo src={"client-logos/bw/hublot.png"} alt="" />
+            <Logo src={"client-logos/bw/hunt-fish-club.png"} alt="" />
+            <Logo src={"client-logos/bw/millenium.png"} alt="" />
+          </LogoContainer>
+        </div>
+      </Section>
+      <Section>
+        <SectionLabel>Expertises</SectionLabel>
+        <BigText>
+          Hand-picked team,
+          <br /> award-winning results
+        </BigText>
+        <LinkList>
+          <LinkListItem
+            id="1"
+            name="Creative Planning & Marketing"
+            description="Turn your bold vision into bold margin."
+          />
+          <LinkListItem
+            id="1"
+            name="Creative Planning & Marketing"
+            description="Turn your bold vision into bold margin."
+          />
+        </LinkList>
+      </Section>
+    </main>
   );
 }
