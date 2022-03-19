@@ -41,6 +41,14 @@ module.exports = {
           getResponsiveValue(screens.sm, screens["2xl"], 30, 100),
           "1.075em",
         ],
+        articleHeader: [
+          getResponsiveValue(screens.sm, screens["2xl"], 30, 48),
+          "1.075em",
+        ],
+        articleBody: [
+          getResponsiveValue(screens.sm, screens["2xl"], 16, 24),
+          "1.4em",
+        ],
       },
       letterSpacing: {
         "big-text": "-0.02em",

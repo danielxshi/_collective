@@ -3,6 +3,7 @@ import fs from "fs";
 import { join } from "path";
 import { parseMarkdown } from "../../utils/parseMarkdown";
 import MarkdownRenderer from "../../components/MarkdownRenderer";
+import BackButton from "../../components/Button/BackButton";
 
 const Page = (props) => {
   const { slug, title, description, img } = props.frontMatter;
@@ -10,13 +11,18 @@ const Page = (props) => {
   // This would usually have your layout and whatnot as well, but omitted here
   // for sake of simplicity of course.
   return (
-    <main className="mx-4 sm:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big">
-      <section className="mt-16 mb-16">
-        <div className="font-serif text-big">{title}</div>
-        <div className="font-serif text-medium mb-16">{description}</div>
-        <img src={img} />
+    <main className="mx-4 sm:mx-8 my-[1.5em] 2xl:max-w-[96rem] 2xl:mx-auto text-big grid grid-cols-[1fr_8fr] md:grid-cols-[1fr_3fr]">
+      <div className="col-start-1 text-articleHeader">
+        <BackButton href="/" />
+      </div>
+      <div className="font-serif text-articleHeader mb-[1em] col-start-2">
+        {title}
+      </div>
+      {/* <div className="font-serif  mb-16 md:ml-[20%]">{description}</div> */}
+      <img className="col-start-1 col-end-3 w-full" src={img} />
+      <section className="col-start-1 md:col-start-2 col-end-3 mt-[.5em] mb-[1em]">
+        <MarkdownRenderer ast={props.ast} />
       </section>
-      <MarkdownRenderer ast={props.ast} />
     </main>
   );
   // return <div></div>;

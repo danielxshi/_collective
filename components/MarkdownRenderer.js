@@ -6,7 +6,11 @@ const getComponent = (node) => {
       return ({ children }) => <>{children}</>;
 
     case "paragraph":
-      return ({ children }) => <p>{children}</p>;
+      return ({ children }) => (
+        <p className="text-articleBody py-[.5em] font-mono mt-[.5em]">
+          {children}
+        </p>
+      );
 
     case "emphasis":
       return ({ children }) => <em>{children}</em>;
@@ -14,6 +18,23 @@ const getComponent = (node) => {
     case "heading":
       return ({ children, depth = 2 }) => {
         const Heading = `h${depth}`;
+
+        if (depth === 2) {
+          return (
+            <h2 className="font-serif text-articleHeader mt-[1em]">
+              {children}
+            </h2>
+          );
+        }
+
+        if (depth === 3) {
+          return (
+            <h3 className="font-mono font-bold uppercase text-small tracking-widest mt-[6em]">
+              {children}
+            </h3>
+          );
+        }
+
         return <Heading>{children}</Heading>;
       };
 
