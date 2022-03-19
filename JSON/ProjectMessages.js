@@ -40,24 +40,21 @@ const ServiceMessages = [
   {
     ID: "SM1",
     Title: "Creative Planning & Marketing",
-    Message:
-      "Having worked in cross-functional teams with market wide partnerships, we are proud to be…",
+    Message: "Turn your bold vision into bold margin.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM2",
     Title: "Website Development",
-    Message:
-      "From the layout & positioning, to the color schemes & images, a website’s design is the face of the brand…",
+    Message: "Create Lasting impression through our digital craftmanship.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM3",
     Title: "CPG",
-    Message:
-      "Finding success in the CPG industry begins with being able to properly understand consumers…",
+    Message: "Data-driven approach for your next product",
     Link: "/",
     Src: "/",
   },
