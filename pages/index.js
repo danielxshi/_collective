@@ -259,13 +259,13 @@ export default function Home() {
                   className="font-mono text-medium mb-2"
                   href="mailto:testing@005.com"
                 >
-                  testing@005.com
+                  wayne@liangholdings.com
                 </a>
                 <a
                   className="font-mono text-medium"
                   href="mailto:testing@005.com"
                 >
-                  +1 (604) 6030483
+                  +1 (780) 6677189
                 </a>
               </div>
             </div>
