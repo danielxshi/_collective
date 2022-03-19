@@ -7,7 +7,7 @@ const ArrowRightIcon = ({ isHovering }) => (
     <motion.div
       className="flex flex-row"
       transition={{
-        duration: AnimationConfig.FAST,
+        duration: AnimationConfig.NORMAL,
         ease: AnimationConfig.EASING,
       }}
       initial={{ x: "-1em" }}
@@ -15,19 +15,19 @@ const ArrowRightIcon = ({ isHovering }) => (
     >
       <motion.img
         transition={{
-          duration: AnimationConfig.FAST,
+          duration: AnimationConfig.NORMAL,
           ease: AnimationConfig.EASING,
         }}
-        initial={{ scale: 0 }}
-        animate={{ scale: isHovering ? 1 : 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isHovering ? 1 : 0 }}
         className="h-[1em]"
         src="icon-arrow-forward.svg"
       />
       <motion.img
-        initial={{ scale: 1 }}
-        animate={{ scale: isHovering ? 0 : 1 }}
+        initial={{ opacity: 1 }}
+        animate={{ opacity: isHovering ? 0 : 1 }}
         transition={{
-          duration: AnimationConfig.FAST,
+          duration: AnimationConfig.NORMAL,
           ease: AnimationConfig.EASING,
         }}
         className="h-[1em]"
@@ -44,6 +44,12 @@ function LinkListItem({ id, name, description }) {
     <motion.a
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
+      transition={{
+        duration: AnimationConfig.FAST,
+        ease: AnimationConfig.EASING,
+      }}
+      initial={{ opacity: 0.56 }}
+      animate={{ opacity: isHovering ? 1 : 0.65 }}
       href="#"
       className="grid grid-cols-[2fr_8fr_1fr] md:grid-cols-[1fr_2fr_1fr] text-medium py-[1.2em] font-serif border-t border-[rgba(255,255,255,.1)] "
     >
