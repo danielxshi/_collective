@@ -11,7 +11,7 @@ const Page = (props) => {
   // This would usually have your layout and whatnot as well, but omitted here
   // for sake of simplicity of course.
   return (
-    <main className="mx-4 sm:mx-8 my-[1.5em] 2xl:max-w-[96rem] 2xl:mx-auto text-big grid grid-cols-[1fr_8fr] md:grid-cols-[1fr_3fr]">
+    <main className="mx-4 sm:mx-8 mt-[1.5em] 2xl:max-w-[96rem] 2xl:mx-auto text-big grid grid-cols-[1fr_8fr] md:grid-cols-[1fr_2fr]">
       <div className="col-start-1 text-articleHeader">
         <BackButton href="/" />
       </div>
@@ -19,8 +19,11 @@ const Page = (props) => {
         {title}
       </div>
       {/* <div className="font-serif  mb-16 md:ml-[20%]">{description}</div> */}
-      <img className="col-start-1 col-end-3 w-full" src={img} />
-      <section className="col-start-1 md:col-start-2 col-end-3 mt-[.5em] mb-[1em]">
+      <img
+        className="col-start-1 col-end-4 w-full max-h-[50vh] object-cover"
+        src={img}
+      />
+      <section className="col-start-1 md:col-start-2 col-end-3 mb-[1em]">
         <MarkdownRenderer ast={props.ast} />
       </section>
     </main>
