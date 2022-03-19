@@ -95,7 +95,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="wrapper" ref={wrapperRef}>
+      <div className="wrapper z-0" ref={wrapperRef}>
         <div className="loader" ref={boxRef}></div>
         <div className="loader--hero">
           <span className="hero--loader" ref={heroRef}>
@@ -158,17 +158,27 @@ export default function Home() {
               description="Turn your bold vision into bold margin."
             />
           </LinkList>
-          <Button>View More Services</Button>
+          <div className="mt-[.5em] flex justify-center md:justify-start md:pl-[25%] w-full">
+            <Button>View More Services</Button>
+          </div>
         </Section>
         <footer className="my-[2em]">
-          <div className="font-serif text-medium mb-5">Got a job for us?</div>
-          <div className="flex flex-col">
-            <a className="font-mono text-small" href="mailto:testing@005.com">
-              testing@005.com
-            </a>
-            <a className="font-mono text-small" href="mailto:testing@005.com">
-              +1 604 6030483
-            </a>
+          <div className="flex flex-col items-center md:items-start md:pl-[25%] w-full">
+            <div className="font-serif text-medium mb-5">Got a job for us?</div>
+            <div className="flex flex-col items-center md:items-start mb-8">
+              <a
+                className="font-mono text-medium mb-2"
+                href="mailto:testing@005.com"
+              >
+                testing@005.com
+              </a>
+              <a
+                className="font-mono text-medium"
+                href="mailto:testing@005.com"
+              >
+                +1 (604) 6030483
+              </a>
+            </div>
           </div>
         </footer>
       </main>
