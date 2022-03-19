@@ -93,7 +93,7 @@ export default function Home() {
   });
 
   return (
-    <main className="mx-4 md:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big">
+    <main className="mx-4 sm:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big">
       <section className="w-full h-screen">
         {/* <div className="wrapper" ref={wrapperRef}>
         <div className="loader" ref={boxRef}></div>
