@@ -36,7 +36,7 @@ const BigText = ({ children }) => (
 
 const Logo = ({ src }) => <img className="" src={src} alt="" />;
 const LogoContainer = ({ children }) => (
-  <div className="grid grid-cols-3 gap-3 px-12">{children}</div>
+  <div className="grid grid-cols-3 gap-3 px-12 pt-[1em]">{children}</div>
 );
 
 export default function Home() {
@@ -93,7 +93,7 @@ export default function Home() {
   });
 
   return (
-    <main className="mx-[.5em] text-big">
+    <main className="mx-4 md:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big">
       <section className="w-full h-screen">
         {/* <div className="wrapper" ref={wrapperRef}>
         <div className="loader" ref={boxRef}></div>
@@ -143,8 +143,18 @@ export default function Home() {
             description="Turn your bold vision into bold margin."
           />
           <LinkListItem
-            id="1"
-            name="Creative Planning & Marketing"
+            id="2"
+            name="Web Design & Development"
+            description="Turn your bold vision into bold margin."
+          />
+          <LinkListItem
+            id="3"
+            name="Consumer Packaged Goods(CPG)"
+            description="Turn your bold vision into bold margin."
+          />
+          <LinkListItem
+            id="4"
+            name="Videography and Photography"
             description="Turn your bold vision into bold margin."
           />
         </LinkList>
