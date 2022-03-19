@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
-import { gsap } from 'gsap';
-import NextLink from 'next/link';
+import React, { useRef, useEffect } from "react";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { gsap } from "gsap";
+import NextLink from "next/link";
 import {
   Link,
   Container,
@@ -13,14 +13,12 @@ import {
   ListItem,
   Icon,
   useColorModeValue,
-} from '@chakra-ui/react';
-import Navbar from '/components/Navbar/Navbar';
-import Head from 'next/head';
-import IntroMessage from '../components/IntroMessage';
+} from "@chakra-ui/react";
+import Navbar from "/components/Navbar/Navbar";
+import Head from "next/head";
+import IntroMessage from "../components/IntroMessage";
 
-import LinkListItem from '../components/LinkList/LinkListItem';
-import LinkList from '../components/LinkList/LinkList';
-import Button from '../components/Button/Button';
+import ServiceList from "../components/ServiceList";
 
 const SectionLabel = ({ children }) => (
   <h2 className="font-mono text-small leading-none pb-4 uppercase tracking-widest opacity-50">
@@ -51,8 +49,8 @@ export default function Home() {
   useEffect(() => {
     //CURTAIN
     gsap.to(wrapperRef.current, 0.5, {
-      top: '-100%',
-      ease: 'sine.out',
+      top: "-100%",
+      ease: "sine.out",
       delay: 3.4,
     });
 
@@ -60,39 +58,39 @@ export default function Home() {
     gsap.from(boxRef.current, 1.6, {
       scaleY: 0,
       y: 80,
-      ease: 'Power1.easeOut',
-      transformOrigin: '50% 100%',
+      ease: "Power1.easeOut",
+      transformOrigin: "50% 100%",
     });
 
     //LOADER to
     gsap.to(boxRef.current, 1.6, {
       delay: 1.4,
-      height: '20vh',
+      height: "20vh",
       scaleY: 0,
-      ease: 'Power1.easeOut',
-      transformOrigin: '0% -100%',
+      ease: "Power1.easeOut",
+      transformOrigin: "0% -100%",
     });
 
     //HERO to
     gsap.to(heroRef.current, 1.6, {
       opacity: 1,
       delay: 3,
-      ease: 'slow(0.2, 0.7, false)',
-      x: '-=10vw',
+      ease: "slow(0.2, 0.7, false)",
+      x: "-=10vw",
     });
 
-  //   //MEMBER to
-  //   gsap.to(titleRef.current, 1.6, {
-  //     delay: 4,
-  //     opacity: 1,
-  //     ease: 'slow(0.2, 0.7, false)',
-  //   });
+    //   //MEMBER to
+    //   gsap.to(titleRef.current, 1.6, {
+    //     delay: 4,
+    //     opacity: 1,
+    //     ease: 'slow(0.2, 0.7, false)',
+    //   });
 
-  //   gsap.to(titleRef.current, 1.6, {
-  //     opacity: 0,
-  //     delay: 6,
-  //     ease: 'slow(0.2, 0.7, false)',
-  //   });
+    //   gsap.to(titleRef.current, 1.6, {
+    //     opacity: 0,
+    //     delay: 6,
+    //     ease: 'slow(0.2, 0.7, false)',
+    //   });
   });
 
   return (
@@ -111,11 +109,15 @@ export default function Home() {
         }
         containerRef={containerRef}
       >
-        {' '}
+        {" "}
         <div className="wrapper z-0" ref={wrapperRef}>
           <div className="loader" ref={boxRef}></div>
           <div className="loader--hero">
-            <span data-scroll-class="fade--out" className="hero--loader" ref={heroRef}>
+            <span
+              data-scroll-class="fade--out"
+              className="hero--loader"
+              ref={heroRef}
+            >
               _COLLECTIVE
             </span>
           </div>
@@ -124,7 +126,11 @@ export default function Home() {
           </div>
         </div>
         {/* <Navbar /> */}
-        <main data-scroll-container ref={containerRef} className="mx-4 sm:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big">
+        <main
+          data-scroll-container
+          ref={containerRef}
+          className="mx-4 sm:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big"
+        >
           <section className="w-full h-screen"></section>
           <Section data-scroll-section>
             <SectionLabel>About Us</SectionLabel>
@@ -138,12 +144,12 @@ export default function Home() {
             <div className="flex w-full flex-col items-center">
               <SectionLabel>Entrusted By</SectionLabel>
               <LogoContainer>
-                <Logo src={'client-logos/bw/ap.png'} alt="" />
-                <Logo src={'client-logos/bw/calvin-klein.png'} alt="" />
-                <Logo src={'client-logos/bw/fairmont-dubai.png'} alt="" />
-                <Logo src={'client-logos/bw/hublot.png'} alt="" />
-                <Logo src={'client-logos/bw/hunt-fish-club.png'} alt="" />
-                <Logo src={'client-logos/bw/millenium.png'} alt="" />
+                <Logo src={"client-logos/bw/ap.png"} alt="" />
+                <Logo src={"client-logos/bw/calvin-klein.png"} alt="" />
+                <Logo src={"client-logos/bw/fairmont-dubai.png"} alt="" />
+                <Logo src={"client-logos/bw/hublot.png"} alt="" />
+                <Logo src={"client-logos/bw/hunt-fish-club.png"} alt="" />
+                <Logo src={"client-logos/bw/millenium.png"} alt="" />
               </LogoContainer>
             </div>
           </Section>
@@ -153,32 +159,8 @@ export default function Home() {
               Hand-picked team,
               <br /> award-winning results
             </BigText>
-            <LinkList>
-              <LinkListItem
-                id="1"
-                name="Creative Planning & Marketing"
-                description="Turn your bold vision into bold margin."
-              />
-              <LinkListItem
-                id="2"
-                name="Web Design & Development"
-                description="Turn your bold vision into bold margin."
-              />
-              <LinkListItem
-                id="3"
-                name="Consumer Packaged Goods(CPG)"
-                description="Turn your bold vision into bold margin."
-              />
-              <LinkListItem
-                id="4"
-                name="Videography and Photography"
-                description="Turn your bold vision into bold margin."
-              />
-            </LinkList>
-            <div className="mt-[.5em] flex justify-center md:justify-start md:pl-[25%] w-full">
-              <Button>View More Services</Button>
-            </div>
-          </Section >
+            <ServiceList />
+          </Section>
           <footer data-scroll className="my-[2em]">
             <div className="flex flex-col items-center md:items-start md:pl-[25%] w-full">
               <div className="font-serif text-medium mb-5">
