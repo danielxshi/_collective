@@ -34,7 +34,7 @@ module.exports = {
           "1.2em",
         ],
         medium: [
-          getResponsiveValue(screens.sm, screens["2xl"], 20, 24),
+          getResponsiveValue(screens.sm, screens["2xl"], 20, 30),
           "1.075em",
         ],
         big: [
