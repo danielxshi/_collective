@@ -53,7 +53,7 @@ export default function Home() {
     gsap.to(wrapperRef.current, 0.5, {
       top: '-100%',
       ease: 'sine.out',
-      delay: 6.6,
+      delay: 3.4,
     });
 
     //LOADER from
@@ -66,7 +66,7 @@ export default function Home() {
 
     //LOADER to
     gsap.to(boxRef.current, 1.6, {
-      delay: 1.6,
+      delay: 1.4,
       height: '20vh',
       scaleY: 0,
       ease: 'Power1.easeOut',
@@ -76,23 +76,23 @@ export default function Home() {
     //HERO to
     gsap.to(heroRef.current, 1.6, {
       opacity: 1,
-      delay: 7,
+      delay: 3,
       ease: 'slow(0.2, 0.7, false)',
       x: '-=10vw',
     });
 
-    //MEMBER to
-    gsap.to(titleRef.current, 1.6, {
-      delay: 4,
-      opacity: 1,
-      ease: 'slow(0.2, 0.7, false)',
-    });
+  //   //MEMBER to
+  //   gsap.to(titleRef.current, 1.6, {
+  //     delay: 4,
+  //     opacity: 1,
+  //     ease: 'slow(0.2, 0.7, false)',
+  //   });
 
-    gsap.to(titleRef.current, 1.6, {
-      opacity: 0,
-      delay: 6,
-      ease: 'slow(0.2, 0.7, false)',
-    });
+  //   gsap.to(titleRef.current, 1.6, {
+  //     opacity: 0,
+  //     delay: 6,
+  //     ease: 'slow(0.2, 0.7, false)',
+  //   });
   });
 
   return (
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="wrapper z-0" ref={wrapperRef}>
           <div className="loader" ref={boxRef}></div>
           <div className="loader--hero">
-            <span className="hero--loader" ref={heroRef}>
+            <span data-scroll-class="" className="hero--loader" ref={heroRef}>
               _COLLECTIVE
             </span>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
         {/* <Navbar /> */}
         <main data-scroll-container ref={containerRef} className="mx-4 sm:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big">
           <section className="w-full h-screen"></section>
-          <Section>
+          <Section data-scroll-section>
             <SectionLabel>About Us</SectionLabel>
             <BigText>
               We partner with clients in financial services, electronic
@@ -134,7 +134,7 @@ export default function Home() {
               infotainment, retail industries, CPG, and more.
             </BigText>
           </Section>
-          <Section>
+          <Section data-scroll-section>
             <div className="flex w-full flex-col items-center">
               <SectionLabel>Entrusted By</SectionLabel>
               <LogoContainer>
@@ -147,7 +147,7 @@ export default function Home() {
               </LogoContainer>
             </div>
           </Section>
-          <Section>
+          <Section data-scroll-section>
             <SectionLabel>Expertises</SectionLabel>
             <BigText>
               Hand-picked team,
@@ -178,8 +178,8 @@ export default function Home() {
             <div className="mt-[.5em] flex justify-center md:justify-start md:pl-[25%] w-full">
               <Button>View More Services</Button>
             </div>
-          </Section>
-          <footer className="my-[2em]">
+          </Section >
+          <footer data-scroll-section className="my-[2em]">
             <div className="flex flex-col items-center md:items-start md:pl-[25%] w-full">
               <div className="font-serif text-medium mb-5">
                 Got a job for us?
