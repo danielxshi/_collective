@@ -115,7 +115,7 @@ export default function Home() {
         <div className="wrapper z-0" ref={wrapperRef}>
           <div className="loader" ref={boxRef}></div>
           <div className="loader--hero">
-            <span data-scroll-class="" className="hero--loader" ref={heroRef}>
+            <span data-scroll-class="fade--out" className="hero--loader" ref={heroRef}>
               _COLLECTIVE
             </span>
           </div>
@@ -179,7 +179,7 @@ export default function Home() {
               <Button>View More Services</Button>
             </div>
           </Section >
-          <footer data-scroll-section className="my-[2em]">
+          <footer data-scroll className="my-[2em]">
             <div className="flex flex-col items-center md:items-start md:pl-[25%] w-full">
               <div className="font-serif text-medium mb-5">
                 Got a job for us?
