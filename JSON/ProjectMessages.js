@@ -39,70 +39,65 @@ const IntroMessage = [
 const ServiceMessages = [
   {
     ID: "SM1",
-    Title: "Creative Planning & Marketing",
-    Message: "Turn your bold vision into bold margin.",
+    Title: "Creative Planning",
+    Message: "Bringing visions to fruition.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM2",
     Title: "Website Development",
-    Message: "Create Lasting impression through our digital craftmanship.",
+    Message:
+      "Create the perfect first impression through our digital craftsmanship",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM3",
     Title: "CPG",
-    Message: "Data-driven approach for your next product",
+    Message: "Unique marketing tactics, tailored to each brand.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM4",
     Title: "PR Work",
-    Message:
-      "We utilize data to identify behavioural insights to determine which platforms are effective for the…",
+    Message: "Strengthen the frontline of your company name.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM5",
     Title: "Social Insights & Planning",
-    Message:
-      "From planning campaigns on social media to conducting market research to growing social…",
+    Message: "Data-driven approach to your next move.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM6",
     Title: "Influencer Work",
-    Message:
-      "From matching your product/service with the right spokesperson to running a mass campaign, we…",
+    Message: "Leveraging established personalities to grow yours.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM7",
-    Title: "Strategical & Fundamental Financial Analysis",
-    Message:
-      "Solid logistics is what allows for small business to grow and expand into large organizations…",
+    Title: "Strat Analysis",
+    Message: "Expert consultancy from every angle.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM8",
-    Title: "Technological & Programmatic Advancements",
-    Message:
-      "Our Technological & Programmatic branch comprises of five abilities: Engineering, Technical…",
+    Title: "Tech",
+    Message: "Innovating at lightning pace.",
     Link: "/",
     Src: "/",
   },
   {
     ID: "SM9",
-    Title: "Production & Studio Set (Videography and Photography)",
-    Message:
-      "Our managers & producers research, analyze, formalize, execute and accentuate our client…",
+    Title: "Production",
+    Message: "Bringing drawings & concepts into existence.",
     Link: "/",
     Src: "/",
   },
