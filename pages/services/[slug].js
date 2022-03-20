@@ -14,7 +14,7 @@ const Page = (props) => {
     <div className="mx-4 sm:mx-8 mt-[1.5em] 2xl:max-w-[96rem] 2xl:mx-auto text-big">
       <main className="grid grid-cols-[1fr_8fr] md:grid-cols-[1fr_2fr]">
         <div className="col-start-1 text-articleHeader">
-          <BackButton href="/" />
+          <BackButton href="/#expertises" />
         </div>
         <div className="font-serif text-articleHeader mb-[1em] col-start-2">
           {title}
