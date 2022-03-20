@@ -59,7 +59,7 @@ function LinkListItem({ id, name, description, href }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: isHovering ? 1 : 0.65 }}
         href={href}
-        className="grid grid-cols-[2fr_8fr_1fr] md:grid-cols-[1fr_2fr_1fr] text-medium py-[1.2em] font-serif border-t border-[rgba(255,255,255,.17)] "
+        className="reset-link grid grid-cols-[2fr_8fr_1fr] md:grid-cols-[1fr_2fr_1fr] text-medium py-[1.2em] font-serif border-t border-[rgba(255,255,255,.17)] "
       >
         <div className="font-mono font-light">{id}</div>
         <div className="">
