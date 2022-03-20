@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimationConfig } from "../AnimationConfig";
+import Link from "next/link";
 
 const ArrowRightIcon = ({ isHovering }) => (
   <div className="w-[1em] h-[1em] overflow-hidden">
@@ -49,27 +50,28 @@ function LinkListItem({ id, name, description, href }) {
       initial={{ opacity: 0, x: "-5%" }}
       animate={{ opacity: 1, x: "0%" }}
     >
-      <motion.a
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-        transition={{
-          duration: AnimationConfig.FAST,
-          ease: AnimationConfig.EASING,
-        }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isHovering ? 1 : 0.65 }}
-        href={href}
-        className="reset-link grid grid-cols-[2fr_8fr_1fr] md:grid-cols-[1fr_2fr_1fr] text-medium py-[1.2em] font-serif border-t border-[rgba(255,255,255,.17)] "
-      >
-        <div className="font-mono font-light">{id}</div>
-        <div className="">
-          <div className="">{name}</div>
-          <div className="font-mono text-tiny mt-[.5em]">{description}</div>
-        </div>
-        <div className="ml-auto my-auto text-[1.2em]">
-          <ArrowRightIcon isHovering={isHovering} />
-        </div>
-      </motion.a>
+      <Link href={href}>
+        <motion.a
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+          transition={{
+            duration: AnimationConfig.FAST,
+            ease: AnimationConfig.EASING,
+          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isHovering ? 1 : 0.65 }}
+          className="reset-link cursor-pointer grid grid-cols-[2fr_8fr_1fr] md:grid-cols-[1fr_2fr_1fr] text-medium py-[1.2em] font-serif border-t border-[rgba(255,255,255,.17)] "
+        >
+          <div className="font-mono font-light">{id}</div>
+          <div className="">
+            <div className="">{name}</div>
+            <div className="font-mono text-tiny mt-[.5em]">{description}</div>
+          </div>
+          <div className="ml-auto my-auto text-[1.2em]">
+            <ArrowRightIcon isHovering={isHovering} />
+          </div>
+        </motion.a>
+      </Link>
     </motion.div>
   );
 }

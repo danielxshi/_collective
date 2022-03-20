@@ -1,6 +1,6 @@
 ---
-slug: "/creative-planning-marketing"
-title: "Creative Planning Marketing"
+slug: "/creative-planning"
+title: "Creative Planning"
 description: "Having worked in cross-functional teams with market wide partnerships, we are proud to be…"
 img: https://source.unsplash.com/random
 ---
@@ -14,3 +14,9 @@ Most media agencies are overly eager to take the reins on any project they can a
 ### Services
 
 All of our project inquiries go through a detailed screening process to ensure that the magnitude and viability is within our operational capacities. This screen allows us to focus our resources on projects that fit our organizational style the best while safeguarding our quality of work. Our Creative Planning services include:
+
+- ‘Subtle-Marketing’ Strategies & Funnels
+- Creative Engineering Strategies
+- Plan Visualization (graphics & animations)
+- Organizational Direction Advising (visual presentation decks, comparative analysis)
+- In-house Staff Orientations & Innovative Alignment (staff training)
