@@ -9,8 +9,8 @@ import { AnimatePresence } from "framer-motion";
 import { DelayMotion } from "./DelayMotion";
 
 const ServiceList = () => {
-  const MAX_INITIAL_LIST = 5;
-  const STAGGER_DELAY = 200;
+  const MAX_INITIAL_LIST = 4;
+  const STAGGER_DELAY = 150;
   const [isViewingFullList, setIsViewingFullList] = useState(false);
 
   return (
@@ -26,10 +26,10 @@ const ServiceList = () => {
                       ? (index - MAX_INITIAL_LIST) * STAGGER_DELAY
                       : index * STAGGER_DELAY
                   }
+                  key={index}
                 >
                   <LinkListItem
                     id={index + 1}
-                    key={index}
                     name={Title}
                     description={Message}
                     href={Link}

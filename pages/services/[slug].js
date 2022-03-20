@@ -5,6 +5,8 @@ import { parseMarkdown } from "../../utils/parseMarkdown";
 import MarkdownRenderer from "../../components/MarkdownRenderer";
 import BackButton from "../../components/Button/BackButton";
 
+import Head from "next/head";
+
 const Page = (props) => {
   const { slug, title, description, img } = props.frontMatter;
 
@@ -12,6 +14,9 @@ const Page = (props) => {
   // for sake of simplicity of course.
   return (
     <div className="mx-4 sm:mx-8 mt-[1.5em] 2xl:max-w-[96rem] 2xl:mx-auto text-big">
+      <Head>
+        <title>{title} | 005F — DIGITAL MEDIA AGENCY</title>
+      </Head>
       <main className="grid grid-cols-[1fr_8fr] md:grid-cols-[1fr_2fr]">
         <div className="col-start-1 text-articleHeader">
           <BackButton href="/#expertises" />

@@ -133,6 +133,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>005F — DIGITAL MEDIA AGENCY</title>
+      </Head>
       <LocomotiveScrollProvider
         options={{
           smooth: true,
