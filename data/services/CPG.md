@@ -1,6 +1,6 @@
 ---
 slug: "/CPG"
-title: "CPG"
+title: "Consumer Packaged Goods"
 description: "Having worked in cross-functional teams with market wide partnerships, we are proud to be…"
 img: https://source.unsplash.com/random
 ---

@@ -1,6 +1,6 @@
 ---
 slug: "/website-development"
-title: "Creative Planning Marketing"
+title: "Website Development"
 description: "Having worked in cross-functional teams with market wide partnerships, we are proud to be…"
 img: https://source.unsplash.com/random
 ---
@@ -18,7 +18,9 @@ In an era where businesses are dominated by their online presence, a website is 
 6. Internal & External SEO Analysis
 
 #### 85%
+
 OF CONSUMERS JUDGE A BRAND’S REPUTABILITY BY THEIR DIGITAL PRESENCE
 
 #### 79%
+
 OF CONSUMER’S VISIT A BRAND’S WEBSITE BEFORE ENGAGING WITH THEIR PRODUCTS

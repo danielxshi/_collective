@@ -54,7 +54,7 @@ const ServiceMessages = [
   },
   {
     ID: "SM3",
-    Title: "CPG",
+    Title: "Consumer Packaged Goods",
     Message: "Unique marketing tactics, tailored to each brand.",
     Link: "/services/CPG",
     Src: "/",

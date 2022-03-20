@@ -1,6 +1,6 @@
 ---
 slug: "/production"
-title: "Production"
+title: "Production & Studio Set (Videography and Photography)"
 description: "Having worked in cross-functional teams with market wide partnerships, we are proud to be…"
 img: https://source.unsplash.com/random
 ---
