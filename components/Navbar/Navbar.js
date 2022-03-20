@@ -29,14 +29,14 @@ const Navbar = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   const navbarStyles = {
-    // position: 'fixed',
+    position: 'fixed',
     textAlign: 'center',
     transition: 'top 0.5s',
     width: '100%',
   };
 
   return (
-    <div data-scroll style={{ ...navbarStyles, top: visible ? '0' : '-48px' }}>
+    <div data-scroll style={{ ...navbarStyles, top: visible ? '0' : '-75px' }}>
       <div className="mx-4 sm:mx-8">
         <nav className={style['nav--flex--space--layout']}>
           <div>

@@ -9,7 +9,7 @@ img: https://source.unsplash.com/random
 
 The most innovative ideas come from those who can see the bigger picture. Having worked in cross-functional teams with market wide partnerships, we are proud to be in fellowship with the top visionaries of many industries. Having the ability to utilize your resources in the most efficient way requires creative innovation, and this is where we come into play. Our teams specialize in molding your invaluable vision into something that is viable and profitable.
 
-Most media agencies are overly eager to take the reins on any project they can acquire. At Globalize Media agency, we believe in your vision as much as you trust in our ability to better and execute them. We believe that the best ideas come from collaboration, by combining your innovative ideas with our industry knowledge, experience, and resources, we can achieve the best results while being considerate of your satisfaction and inputs. We don’t just work for you, we work _with_ you.
+Most media agencies are overly eager to take the reins on any project they can acquire. At 005F, we believe in your vision as much as you trust in our ability to better and execute them. We believe that the best ideas come from collaboration, by combining your innovative ideas with our industry knowledge, experience, and resources, we can achieve the best results while being considerate of your satisfaction and inputs. We don’t just work for you, we _work_ with you.
 
 ### Services
 

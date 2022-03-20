@@ -5,18 +5,16 @@ description: "Having worked in cross-functional teams with market wide partnersh
 img: https://source.unsplash.com/random
 ---
 
-## Bringing visions to fruition
+## Using established personalities to tell your brand’s story
 
-The most innovative ideas come from those who can see the bigger picture. Having worked in cross-functional teams with market wide partnerships, we are proud to be in fellowship with the top visionaries of many industries. Having the ability to utilize your resources in the most efficient way requires creative innovation, and this is where we come into play. Our teams specialize in molding your invaluable vision into something that is viable and profitable.
+Influencers on social media have a reputation from being an expert or spokesperson in a certain topic/niche. They often have built up a large and enthusiastic fanbase/audience who pay attention to their lives. Studies have shown that over 80% of marketers find influencer marketing more effective than other marketing channels. They can represent you to a target audience in a way that resonates more deeply than traditional means of advertising.
 
-Most media agencies are overly eager to take the reins on any project they can acquire. At Globalize Media agency, we believe in your vision as much as you trust in our ability to better and execute them. We believe that the best ideas come from collaboration, by combining your innovative ideas with our industry knowledge, experience, and resources, we can achieve the best results while being considerate of your satisfaction and inputs. We don’t just work for you, we work _with_ you.
+Having worked with thousands of influencers from every niche imaginable, our team understands the potential of influencer marketing. From matching your product/service with the right spokesperson to running a mass campaign, we deliver a range of services that can be molded into the needs of any brand. At 005F, we can connect you with influencers best suitable for your brand, curate & create marketing content, plan ad-sets to gather a loyal audience, as well as deliver a roadmap for long-term marketing campaigns.
 
 ### Services
 
-All of our project inquiries go through a detailed screening process to ensure that the magnitude and viability is within our operational capacities. This screen allows us to focus our resources on projects that fit our organizational style the best while safeguarding our quality of work. Our Creative Planning services include:
+<!-- All of our project inquiries go through a detailed screening process to ensure that the magnitude and viability is within our operational capacities. This screen allows us to focus our resources on projects that fit our organizational style the best while safeguarding our quality of work. Our Creative Planning services include: -->
 
-1. ‘Subtle-Marketing’ Strategies & Funnels
-2. Creative Engineering Strategies
-3. Plan Visualization (graphics & animations)
-4. Organizational Direction Advising (visual presentation decks, comparative analysis)
-5. In-house Staff Orientations & Innovative Alignment (staff training)
+1. Content Creation & Curation 
+2. Create Storytelling Campaigns (Social Media/Digital Media)
+3. Select Suitable Representatives (Influencers)

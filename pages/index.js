@@ -59,35 +59,35 @@ export default function Home() {
     gsap.to(wrapperRef.current, 0.5, {
       top: "-100%",
       ease: "sine.out",
-      delay: 3.4,
+      delay: .3,
     });
 
-    //LOADER from
-    gsap.from(boxRef.current, 1.6, {
-      display: "block",
-      scaleY: 0,
-      y: 80,
-      ease: "Power1.easeOut",
-      transformOrigin: "50% 100%",
-    });
-    //LOADER to
-    gsap.from(boxRef.current, 1.6, {
-      display: "none",
-      scaleY: 0,
-      y: 80,
-      ease: "Power1.easeOut",
-      transformOrigin: "50% 100%",
-      delay: 3.4,
-    });
+    // //LOADER from
+    // gsap.from(boxRef.current, 1.6, {
+    //   display: "block",
+    //   scaleY: 0,
+    //   y: 80,
+    //   ease: "Power1.easeOut",
+    //   transformOrigin: "50% 100%",
+    // });
+    // //LOADER to
+    // gsap.from(boxRef.current, 1.6, {
+    //   display: "none",
+    //   scaleY: 0,
+    //   y: 80,
+    //   ease: "Power1.easeOut",
+    //   transformOrigin: "50% 100%",
+    //   delay: 3.4,
+    // });
 
-    //LOADER to
-    gsap.to(boxRef.current, 1.6, {
-      delay: 1.4,
-      height: "20vh",
-      scaleY: 0,
-      ease: "Power1.easeOut",
-      transformOrigin: "0% -100%",
-    });
+    // //LOADER to
+    // gsap.to(boxRef.current, 1.6, {
+    //   delay: 1.4,
+    //   height: "20vh",
+    //   scaleY: 0,
+    //   ease: "Power1.easeOut",
+    //   transformOrigin: "0% -100%",
+    // });
 
     //HERO to
 
@@ -152,7 +152,7 @@ export default function Home() {
       >
         {" "}
         <div className="wrapper z-0" ref={wrapperRef}>
-          <div className="loader" ref={boxRef}></div>
+          {/* <div className="loader" ref={boxRef}></div> */}
           <div className="loader--hero">
             <div>
               <span className="hero--loader" ref={heroRef}>

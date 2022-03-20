@@ -5,18 +5,19 @@ description: "Having worked in cross-functional teams with market wide partnersh
 img: https://source.unsplash.com/random
 ---
 
-## Bringing visions to fruition
+## Expert consultancy from every angle
 
-The most innovative ideas come from those who can see the bigger picture. Having worked in cross-functional teams with market wide partnerships, we are proud to be in fellowship with the top visionaries of many industries. Having the ability to utilize your resources in the most efficient way requires creative innovation, and this is where we come into play. Our teams specialize in molding your invaluable vision into something that is viable and profitable.
+We firmly believe that the unseen details cause the most trouble. Even the most minuscule of gaps in your logistical programming can be costing you precious resources in the long run. Solid logistics is what allows for small business to grow and expand into large organizations.
 
-Most media agencies are overly eager to take the reins on any project they can acquire. At Globalize Media agency, we believe in your vision as much as you trust in our ability to better and execute them. We believe that the best ideas come from collaboration, by combining your innovative ideas with our industry knowledge, experience, and resources, we can achieve the best results while being considerate of your satisfaction and inputs. We don’t just work for you, we work _with_ you.
+Our team has in-depth experience in many forms of technical analysis, suited for any industry. We are capable of working on detailed strategic analysis reports in short time frames. These reports will not only highlight the inefficiencies in your organization, it will also highlight the weaknesses that are likely to become problematic in the future.
+
+From logistical inefficiencies and insolvency issues to ill-planned expansions, we have seen many once profitable companies fall into the red because of financial oversights. We believe that most catastrophic failures come from ill-informed companies and not negligence, that is why we strive to keep you up to date on the most recent going-ons of your company. We can point you in the right direction while shining light on potholes along your business’ path to prosperity.
 
 ### Services
 
-All of our project inquiries go through a detailed screening process to ensure that the magnitude and viability is within our operational capacities. This screen allows us to focus our resources on projects that fit our organizational style the best while safeguarding our quality of work. Our Creative Planning services include:
+<!-- All of our project inquiries go through a detailed screening process to ensure that the magnitude and viability is within our operational capacities. This screen allows us to focus our resources on projects that fit our organizational style the best while safeguarding our quality of work. Our Creative Planning services include: -->
 
-1. ‘Subtle-Marketing’ Strategies & Funnels
-2. Creative Engineering Strategies
-3. Plan Visualization (graphics & animations)
-4. Organizational Direction Advising (visual presentation decks, comparative analysis)
-5. In-house Staff Orientations & Innovative Alignment (staff training)
+1. Organizational Financial Advising
+2. Company Fundamental Analysis (liquidity, solvency, financial leverage, profitability, turnover, market value)
+3. Competitor Outlook Presentations
+4. Market Outlook Reports
