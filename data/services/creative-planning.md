@@ -15,8 +15,8 @@ Most media agencies are overly eager to take the reins on any project they can a
 
 All of our project inquiries go through a detailed screening process to ensure that the magnitude and viability is within our operational capacities. This screen allows us to focus our resources on projects that fit our organizational style the best while safeguarding our quality of work. Our Creative Planning services include:
 
-- ‘Subtle-Marketing’ Strategies & Funnels
-- Creative Engineering Strategies
-- Plan Visualization (graphics & animations)
-- Organizational Direction Advising (visual presentation decks, comparative analysis)
-- In-house Staff Orientations & Innovative Alignment (staff training)
+1. ‘Subtle-Marketing’ Strategies & Funnels
+2. Creative Engineering Strategies
+3. Plan Visualization (graphics & animations)
+4. Organizational Direction Advising (visual presentation decks, comparative analysis)
+5. In-house Staff Orientations & Innovative Alignment (staff training)

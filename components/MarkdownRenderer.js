@@ -3,13 +3,13 @@ import React from "react";
 const getComponent = (node) => {
   switch (node.type) {
     case "root":
-      return ({ children }) => <>{children}</>;
+      return ({ children }) => (
+        <div className="font-serif text-articleBody">{children}</div>
+      );
 
     case "paragraph":
       return ({ children }) => (
-        <p className="text-articleBody py-[.5em] font-mono mt-[.5em]">
-          {children}
-        </p>
+        <p className="py-[.5em] mt-[.5em]">{children}</p>
       );
 
     case "emphasis":
@@ -41,7 +41,24 @@ const getComponent = (node) => {
     case "text":
       return ({ value }) => <>{value}</>;
 
-    /* Handle all types here … */
+    case "list":
+      console.log(node);
+      if (node.ordered) {
+        return ({ children }) => (
+          <ol className="list-decimal mt-[2em] font-mono text-small">
+            {children}
+          </ol>
+        );
+      }
+      return ({ children }) => (
+        <ul className="list-disc mt-[.5em] font-mono text-small">{children}</ul>
+      );
+    case "listItem":
+      return ({ children }) => (
+        <li className="border-t border-[rgba(255,255,255,.1)] mb-[.5em] ml-[1.5em] md:ml-0">
+          {children}
+        </li>
+      );
 
     default:
       console.log("Unhandled node type", node);
