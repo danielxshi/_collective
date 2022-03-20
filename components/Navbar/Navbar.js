@@ -1,39 +1,57 @@
 import Link from 'next/link';
-import { useState } from 'react';
-import styles from '../../styles/modules/_nav.module.scss';
-import { MenuItems } from './MenuItems';
+import React, { useState, useEffect } from 'react';
+import style from '../../styles/modules/_nav.module.scss';
+import MenuItems from '../../JSON/MenuItems';
+import { debounce } from '../../utils/debounce';
+import { useRouter } from 'next/router';
 
-export default function Layout({ children }) {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const router = useRouter();
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 0) ||
+        currentScrollPos < 90
+    );
+    setPrevScrollPos(currentScrollPos);
+  }, 0);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
+
+  const navbarStyles = {
+    // position: 'fixed',
+    textAlign: 'center',
+    transition: 'top 0.5s',
+    width: '100%',
+  };
+
   return (
-    <>
-      <header>
-        <nav className={[styles['nav'], styles['nav--grid']].join(' ')}>
-          <Link href="/">
-            <a
-              className={[styles['nav--logo--grid'], styles['nav--logo']].join(
-                ' '
-              )}
-            >
-              005F
-            </a>
-          </Link>
-          <button
-            className={
-              isOpen === false
-                ? styles.hamburger
-                : styles.hamburger + ' ' + styles.active
-            }
-            onClick={openMenu}
-          >
-            <span className={styles.bar}></span>
-            <span className={styles.bar}></span>
-            <span className={styles.bar}></span>
-          </button>
+    <div data-scroll style={{ ...navbarStyles, top: visible ? '0' : '-48px' }}>
+      <div className="mx-4 sm:mx-8">
+        <nav className={style['nav--flex--space--layout']}>
+          <div>
+            <Link href="/">
+              <a>005F</a>
+            </Link>
+          </div>
+          <span>DIGITAL MEDIA AGENCY</span>
+          <a href="mailto:wayne@liangholdings.com" className="link--buton">
+            Contact Us
+          </a>
         </nav>
-      </header>
-      {children}
-    </>
+      </div>
+    </div>
   );
-}
+};
+
+export default Navbar;
