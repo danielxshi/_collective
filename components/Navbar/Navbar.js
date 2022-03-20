@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
           <span>DIGITAL MEDIA AGENCY</span>
           <a href="mailto:wayne@liangholdings.com" className="link--buton">
-            Contact Us
+            CONTACT
           </a>
         </nav>
       </div>

@@ -5,18 +5,22 @@ description: "Having worked in cross-functional teams with market wide partnersh
 img: https://source.unsplash.com/random
 ---
 
-## Bringing visions to fruition
+## We pride ourselves in our abilities to create marketing tactics tailored to each brand
 
-The most innovative ideas come from those who can see the bigger picture. Having worked in cross-functional teams with market wide partnerships, we are proud to be in fellowship with the top visionaries of many industries. Having the ability to utilize your resources in the most efficient way requires creative innovation, and this is where we come into play. Our teams specialize in molding your invaluable vision into something that is viable and profitable.
 
-Most media agencies are overly eager to take the reins on any project they can acquire. At Globalize Media agency, we believe in your vision as much as you trust in our ability to better and execute them. We believe that the best ideas come from collaboration, by combining your innovative ideas with our industry knowledge, experience, and resources, we can achieve the best results while being considerate of your satisfaction and inputs. We don’t just work for you, we work _with_ you.
+These are goods used by consumers and require routine replacement. Finding success in the CPG industry begins with being able to properly understand consumers. With the overwhelming amount of competition in this industry, we understand that getting ahead means creating trends, not following them.
+
+
+With our vast network of social media entities around the world, we understand the needs of both the customers as well as the brands. Our data-driven approach consists of leveraging, gathering, and analyzing data including that of location, demographics, behaviours, interests and more. The combination of this and our social insights is used to recognize upcoming trends.
+
+
+#### 78%
+
+OF CONSUMERS FIND PURCHASE INSPIRATION THROUGH MEDIA PLATFORMS
+
+
 
 ### Services
 
-All of our project inquiries go through a detailed screening process to ensure that the magnitude and viability is within our operational capacities. This screen allows us to focus our resources on projects that fit our organizational style the best while safeguarding our quality of work. Our Creative Planning services include:
+Our team has experience with brick and mortar stores as well as with online retailers. Knowledge of both industries is what we use to our advantage. Our team can assist in all operational functions including, but not limited to, managing & planning profit margins, distribution networks, input & output volume, mass production, as well as other components unique to the specific industry and brand.
 
-1. ‘Subtle-Marketing’ Strategies & Funnels
-2. Creative Engineering Strategies
-3. Plan Visualization (graphics & animations)
-4. Organizational Direction Advising (visual presentation decks, comparative analysis)
-5. In-house Staff Orientations & Innovative Alignment (staff training)
