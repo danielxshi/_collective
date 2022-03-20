@@ -41,6 +41,9 @@ const getComponent = (node) => {
     case "text":
       return ({ value }) => <>{value}</>;
 
+    case "image":
+      return ({ children }) => <img src={node.url} alt={node.alt} />;
+
     case "list":
       console.log(node);
       if (node.ordered) {
