@@ -48,7 +48,7 @@ const ServiceMessages = [
     ID: "SM2",
     Title: "Website Development",
     Message:
-      "Create the perfect first impression through our digital craftsmanship",
+      "Create the perfect first impression through our digital craftsmanship.",
     Link: "/services/website-development",
     Src: "/",
   },
