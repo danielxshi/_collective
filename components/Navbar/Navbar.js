@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div data-scroll style={{ ...navbarStyles, top: visible ? '0' : '-75px' }}>
-      <div className="mx-4 sm:mx-8">
+      <div className="mx-4 sm:mx-8 2xl:max-w-[96rem] 2xl:mx-auto ">
         <nav className={style['nav--flex--space--layout']}>
           <div>
             <Link href="/">

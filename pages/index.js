@@ -1,13 +1,13 @@
-import React, { useRef, useEffect } from "react";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import { gsap } from "gsap";
-import NextLink from "next/link";
-import { useViewportScroll, useTransform, motion } from "framer-motion";
-import Navbar from "/components/Navbar/Navbar";
-import Head from "next/head";
-import IntroMessage from "../components/IntroMessage";
+import React, { useRef, useEffect } from 'react';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+import { gsap } from 'gsap';
+import NextLink from 'next/link';
+import { useViewportScroll, useTransform, motion } from 'framer-motion';
+import Navbar from '/components/Navbar/Navbar';
+import Head from 'next/head';
+// import IntroMessage from "../components/IntroMessage";
 
-import ServiceList from "../components/ServiceList";
+import ServiceList from '../components/ServiceList';
 
 const SectionLabel = ({ children }) => (
   <h2 className="font-mono text-small leading-none pb-4 uppercase tracking-widest opacity-50">
@@ -57,9 +57,9 @@ export default function Home() {
   useEffect(() => {
     //CURTAIN
     gsap.to(wrapperRef.current, 0.5, {
-      top: "-100%",
-      ease: "sine.out",
-      delay: .3,
+      top: '-100%',
+      ease: 'sine.out',
+      delay: 0.3,
     });
 
     // //LOADER from
@@ -93,28 +93,22 @@ export default function Home() {
 
     gsap.from(heroRef.current, 1.6, {
       opacity: 1,
-      x: "0",
+      x: '0',
     });
 
-    gsap.to(heroRef.current, 1.6, {
-      opacity: 1,
-      delay: 3,
-      ease: "slow(0.2, 0.7, false)",
-      x: "-=10vw",
-    });
 
-    gsap.to(heroRef1.current, 1.6, {
-      opacity: 1,
-      delay: 3,
-      ease: "slow(0.2, 0.7, false)",
-      x: "-=10vw",
+    gsap.from(heroRef2.current, 1.6, {
+      opacity: 0,
+      delay: 1,
+      ease: 'slow(0.2, 0.7, false)',
+      x: '0',
     });
 
     gsap.to(heroRef2.current, 1.6, {
       opacity: 1,
-      delay: 3,
-      ease: "slow(0.2, 0.7, false)",
-      x: "-=5vw",
+      delay: 1,
+      ease: 'slow(0.2, 0.7, false)',
+      x: '-=5vw',
     });
 
     // //MEMBER to
@@ -150,24 +144,18 @@ export default function Home() {
         }
         containerRef={containerRef}
       >
-        {" "}
+        {' '}
         <div className="wrapper z-0" ref={wrapperRef}>
-          {/* <div className="loader" ref={boxRef}></div> */}
           <div className="loader--hero">
-            <div>
-              <span className="hero--loader" ref={heroRef}>
-                005F
-              </span>
-              <span className="hero--loader" ref={heroRef1}>
-                A DIGITAL MEDIA AGENCY
-              </span>
-              <span className="hero--loader" ref={heroRef2}>
-                CONTACT US
-              </span>
-            </div>
-          </div>
-          <div className="loader--member-wrapper" ref={titleRef}>
-            <IntroMessage />
+            {/* <span className="hero--loader" ref={heroRef}>
+              005F
+            </span>
+            <span className="hero--loader" ref={heroRef1}>
+              A DIGITAL MEDIA AGENCY
+            </span>
+            <span className="hero--loader" ref={heroRef2}>
+              CONTACT US
+            </span> */}
           </div>
         </div>
         <Navbar />
@@ -176,7 +164,14 @@ export default function Home() {
           ref={containerRef}
           className="mx-4 sm:mx-8 2xl:max-w-[96rem] 2xl:mx-auto text-big"
         >
-          <section className="w-full h-screen"></section>
+          <div className="loader--hero">
+            <span className="hero--loader" ref={heroRef2}>
+              005F
+            </span>
+            {/* <span className="hero--loader" ref={heroRef1}>
+              A DIGITAL MEDIA AGENCY
+            </span> */}
+          </div>
           <Section data-scroll-section>
             <SectionLabel>About Us</SectionLabel>
             <BigText data-scroll-speed="1.2">
@@ -194,7 +189,7 @@ export default function Home() {
                   data-scroll-direction="horizontal"
                   data-scroll-speed="0.5"
                 >
-                  <Logo src={"client-logos/bw/ap.png"} alt="" />
+                  <Logo src={'client-logos/bw/ap.png'} alt="" />
                 </div>
 
                 <div
@@ -202,7 +197,7 @@ export default function Home() {
                   data-scroll-direction="horizontal"
                   data-scroll-speed="0.5"
                 >
-                  <Logo src={"client-logos/bw/calvin-klein.png"} alt="" />
+                  <Logo src={'client-logos/bw/calvin-klein.png'} alt="" />
                 </div>
 
                 <div
@@ -210,7 +205,7 @@ export default function Home() {
                   data-scroll-direction="horizontal"
                   data-scroll-speed="0.5"
                 >
-                  <Logo src={"client-logos/bw/fairmont-dubai.png"} alt="" />
+                  <Logo src={'client-logos/bw/fairmont-dubai.png'} alt="" />
                 </div>
 
                 <div
@@ -218,7 +213,7 @@ export default function Home() {
                   data-scroll-direction="horizontal"
                   data-scroll-speed="-0.5"
                 >
-                  <Logo src={"client-logos/bw/hublot.png"} alt="" />
+                  <Logo src={'client-logos/bw/hublot.png'} alt="" />
                 </div>
 
                 <div
@@ -226,7 +221,7 @@ export default function Home() {
                   data-scroll-direction="horizontal"
                   data-scroll-speed="-0.5"
                 >
-                  <Logo src={"client-logos/bw/hunt-fish-club.png"} alt="" />
+                  <Logo src={'client-logos/bw/hunt-fish-club.png'} alt="" />
                 </div>
 
                 <div
@@ -234,7 +229,7 @@ export default function Home() {
                   data-scroll-direction="horizontal"
                   data-scroll-speed="-0.5"
                 >
-                  <Logo src={"client-logos/bw/millenium.png"} alt="" />
+                  <Logo src={'client-logos/bw/millenium.png'} alt="" />
                 </div>
               </LogoContainer>
             </div>
@@ -249,7 +244,7 @@ export default function Home() {
           </Section>
           <footer
             style={{
-              height: "305px",
+              height: '305px',
             }}
             className="my-[2em]"
           >
