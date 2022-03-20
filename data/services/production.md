@@ -5,7 +5,7 @@ description: "Having worked in cross-functional teams with market wide partnersh
 img: https://source.unsplash.com/random
 ---
 
-## Hand-picked team, award-winning results.
+## Hand-picked team, award-winning results
 
 We curate, construct, and configure ideas into reality. From websites and online shops to live apps and social content, the 005F team can bring drawings & concepts into existence.
 
