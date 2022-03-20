@@ -141,9 +141,6 @@ export default function Home() {
           <div className="loader--hero">
             <div>
               <span
-                data-scroll
-                offset="50"
-                stop-opacity="0"
                 className="hero--loader"
                 ref={heroRef}
               >
