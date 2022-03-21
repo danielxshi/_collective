@@ -57,7 +57,7 @@ export default function Home() {
   useEffect(() => {
     //CURTAIN
     gsap.to(wrapperRef.current, 0.5, {
-      top: '-110%',
+      top: '-120%',
       ease: 'sine.out',
       delay: 0.3,
     });
