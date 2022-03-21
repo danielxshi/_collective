@@ -57,7 +57,7 @@ export default function Home() {
   useEffect(() => {
     //CURTAIN
     gsap.to(wrapperRef.current, 0.5, {
-      top: '-100%',
+      top: '-110%',
       ease: 'sine.out',
       delay: 0.3,
     });
@@ -101,14 +101,14 @@ export default function Home() {
       opacity: 0,
       delay: 1,
       ease: 'slow(0.2, 0.7, false)',
-      x: '0',
+      x: '+5vw',
     });
 
     gsap.to(heroRef2.current, 1.6, {
       opacity: 1,
       delay: 1,
       ease: 'slow(0.2, 0.7, false)',
-      x: '-=5vw',
+      x: '0',
     });
 
     // //MEMBER to
